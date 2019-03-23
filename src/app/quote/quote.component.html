@@ -1,0 +1,13 @@
+<h1>
+  Welcome to Quotes
+</h1>
+
+<ul>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.name}}</li>
+    <button (click)='toogleDetails(i)'>Details</button>
+
+    <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+    <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+  </div> 
+</ul>
