@@ -1,4 +1,22 @@
-<p>{{quote.author}}</p>
-<p>{{quote.publisher}}</p>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<p>
+    Author:
+    {{quote.author}}</p>
+<p>
+    publisher:
+    {{quote.publisher}}</p>
+<p>Created {{quote.completeDate|dateCount}} days ago</p>
 
-<button (click) = 'quoteComplete(true)'> Delete </button>
+<div class="row">
+        <div class="col-md-7">
+          <a href="" (click)="voteUp()">
+            <i class="fas fa-thumbs-up " style="font-size:30px;color:blue;"></i>
+          </a> {{likes}}
+        </div>
+        <div class="col-md-5">
+          <a href="" (click)="voteDown()">
+            <i class="fas fa-thumbs-down" style="font-size:30px;color:red;"></i>
+          </a> {{disLikes}}
+        </div>
+      </div>
+<button class="btn btn-outline-danger" (click) = 'quoteDelete(true)'> Delete Quote </button>

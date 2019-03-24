@@ -1,13 +1,17 @@
 <h1>
   Welcome to Quotes
 </h1>
-
+<div class="container">
+  <div class="ro">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+</div>
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
     <li>{{quote.name}}</li>
-    <button (click)='toogleDetails(i)'>Details</button>
+    <button class="btn btn-outline-primary" (click)='toogleDetails(i)'>Details</button>
 
-    <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
-    <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+    <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+    <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
   </div> 
 </ul>
