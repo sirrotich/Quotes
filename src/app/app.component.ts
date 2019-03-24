@@ -8,6 +8,8 @@ import {Quote} from './quote'
 })
 export class AppComponent {
   quotes = [
-    new Quote(1, 'You cant judge a book by its cover','James','Kennedy',new Date(2019,3,22)),
+    new Quote(1, 'Be the change that you want to see in the world','carol','Burnett', new Date(2019,3,22)),
+    new Quote(1, 'Education survives when what has been learned has been forgotten','Skinner','smith',new Date(2019,3,20)),
+    
   ]
 }
