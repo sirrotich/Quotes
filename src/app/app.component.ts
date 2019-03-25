@@ -12,4 +12,6 @@ export class AppComponent {
     new Quote(1, 'Education survives when what has been learned has been forgotten','Skinner','smith',new Date(2019,3,20)),
     
   ]
+
+  
 }
