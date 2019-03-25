@@ -13,6 +13,7 @@ describe('QuoteComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(QuoteComponent);
     component = fixture.componentInstance;
