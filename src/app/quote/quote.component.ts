@@ -22,11 +22,12 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  
   toogleDetails(index){
     // this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
     this.quotes[index].showPublisher = !this.quotes[index].showPublisher;
   }
-  
+
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id=quoteLength+1;
