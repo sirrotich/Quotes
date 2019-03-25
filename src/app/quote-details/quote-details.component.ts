@@ -10,6 +10,7 @@ export class QuoteDetailsComponent implements OnInit {
   likes:number;
   disLikes:number;
 
+
   
   @Input() quote:Quote;
   @Output() isComplete= new EventEmitter<boolean>();
