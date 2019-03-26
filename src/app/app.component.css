@@ -1,13 +1,1 @@
-.app {
-    max-width: 1200px;
-    margin: auto;
-    background: rgb(15, 235, 180);
-    padding: 10px;
-    /* background-image: url("http://ispartalilarvakfi.org/wp-content/uploads/2015/10/lifestyle7.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: center;
-    font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
  @import "~bootstrap/dist/css/bootstrap.css"

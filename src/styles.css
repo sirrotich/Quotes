@@ -1,6 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
-/* body {
-    background-color: lightgreen;
-} */
-/* @import "~bootstrap/dist/css/bootstrap.css" */
+body {
+    text-align: center;
+    border-top: 20px;
+    font-size: 25px;
+    background-color: rgb(72, 228, 189);
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+.row {
+    font-family: 'Indie Flower', cursive;
+}
+.win {
+    font-family: 'Indie Flower', cursive;
+}
+.ne {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
